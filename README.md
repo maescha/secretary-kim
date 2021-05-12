@@ -17,6 +17,6 @@ Secretary Kim's duties include the following...
 A full list of the commands this bot is capable of can be returned after calling **!help** once installed. 
 
 ---
-**In order to use** *Secretary Kim* **, user must create a separate `config.json` file and create an object with the following:**
+**In order to run** *Secretary Kim* **, the developer must create a separate `config.json` file and create an object with the following:**
 - `"prefix": "!"`,
 - `"token": [YOUR DISCORD BOT TOKEN]`
