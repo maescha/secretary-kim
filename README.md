@@ -4,7 +4,9 @@
 ---
 Hello! Welcome to *Secretary Kim*'s repository.
 
-Secretary Kim is a simple [Discord](https://discord.com/) Bot meant to meet the most basic of server/channel needs. Secretary Kim is a project meant to test my Javascript skills.
+Secretary Kim is a simple [Discord](https://discord.com/) Bot meant to meet the most basic of server/channel needs. 
+
+Secretary Kim is a project meant to test my Javascript skills and has been something I've worked on since October 2020. It is not complete but I plan to continue working on adding more commands.
 
 Secretary Kim's duties include the following...
 - pinning a message to the server
@@ -15,7 +17,6 @@ Secretary Kim's duties include the following...
 A full list of the commands this bot is capable of can be returned after calling **!help** once installed. 
 
 ---
-
 **In order to use** *Secretary Kim* **, user must create a separate `config.json` file and create an object with the following:**
 - `"prefix": "!"`,
 - `"token": [YOUR DISCORD BOT TOKEN]`
