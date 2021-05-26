@@ -11,6 +11,9 @@ module.exports = {
     //accesses all of the commands from the Discord client
     const commands = message.client.commands;
 
+    //empty array to put all the commands into
+    var commandsList = [];
+
     //get each command and description from commands and pushes it into
     //the commandsList array
     commands.forEach((val, key) => {
@@ -40,7 +43,3 @@ module.exports = {
   }
   
 }
-
-//empty array to put all the commands into
-var commandsList = [];
-
