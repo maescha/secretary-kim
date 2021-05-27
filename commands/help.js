@@ -34,6 +34,7 @@ module.exports = {
     .setTitle('Secretary Kim can do the following:')
     .setColor('5FCAFF') // #5FCAFF
     .setThumbnail('https://i.imgur.com/fEIgVgo.png')
+
     //adding .join here will take out the commas after each object
     .setDescription(`${commandsList.join('')}`) 
 
@@ -41,5 +42,4 @@ module.exports = {
     message.channel.send(embed);
       
   }
-  
 }
