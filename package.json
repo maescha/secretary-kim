@@ -18,6 +18,7 @@
   "homepage": "https://github.com/maescha/hush-hush#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "common.js": "^1.1.1",
     "discord.js": "^12.5.3"
   },
   "devDependencies": {
