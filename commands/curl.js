@@ -9,7 +9,7 @@ module.exports = {
   async execute(message,args) {
 
     try {
-      const response = await axios.get(JSON.stringify(args[0]));
+      const response = await axios.get(args[0]);
       let responseHeaders = response.headers;
       let resArray = [];
       
@@ -20,7 +20,7 @@ module.exports = {
 
       let firstMessage = new Discord.MessageEmbed()
       .setTitle(response.status + " " + response.statusText)
-      .setAuthor(url)
+      .setAuthor(args[0])
       .setColor('0AFFED')
       .setThumbnail('https://i.imgur.com/WK6kd0K.png')
       .setDescription(resArray);
@@ -30,10 +30,12 @@ module.exports = {
       // turn response body into a string
       let secondMessage = JSON.stringify(response.data);
 
-      //will return the first 500 characters in a code block in Discord chat
+      // will return the first 500 characters in a code block in Discord chat
       await message.channel.send("```"  + secondMessage.slice(0, 500) + "```");
+
     } catch(error) {
-      //handling if there is an error
+      console.log(error);
+      // handling if there is an error
       return message.reply("there was an error in your GET request! Please input a proper URL with 'http://' or 'https://'!");
     };
 
