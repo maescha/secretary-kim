@@ -16,7 +16,7 @@ module.exports = {
     let resArray = [];
 
     for (let key in responseHeaders) {
-      resArray.push(key + ": " + responseHeaders[key]);
+      resArray.push("**"+ key + "**" + ": " + responseHeaders[key]);
     };
 
     let firstMessage = new Discord.MessageEmbed()
@@ -26,6 +26,9 @@ module.exports = {
 
     await message.channel.send(firstMessage);
 
+    let secondMessage = JSON.stringify(response.data);
+
+    await message.channel.send("```"  + secondMessage.slice(0, 500) + "```");
   }
   
 }
