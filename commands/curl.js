@@ -5,22 +5,15 @@ module.exports = {
   name: 'curl',
   description: "This command will return the status code, response header, and response body from any URL you send into it. Just like doing *curl google.com* in node",
   
-  execute(message,args) {
+  async execute(message,args) {
     
-    // Make a request for a user with a given url
-    axios.get('http://google.com')
-    .then(function (request) {
-      // handle success
-      //prints request headers into console
-      console.log(request.config);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log("error");
-    })
-    .then(function () {
-      // always executed
-    });
+    try {
+      const response = await axios.get('https://google.com');
+      // headers are in the config object when you check the error
+      console.log(response.config);
+    } catch (error) {
+      console.error("error");
+    }
 
   }
   
