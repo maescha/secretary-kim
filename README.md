@@ -1,5 +1,5 @@
 # Secretary Kim: Discord Bot
-![transparent image used as the profile picture of Secretary Kim](https://i.imgur.com/xaRJWYa.png)
+<img align="left" alt="transparent image used as the profile picture of Secretary Kim" src="https://i.imgur.com/xaRJWYa.png)"> </img>
 > How may I be of assistance today?
 ---
 Hello! Welcome to *Secretary Kim*'s repository.
@@ -16,7 +16,7 @@ Secretary Kim's duties include the following...
 
 A full list of the commands this bot is capable of can be returned after calling **!help** once installed. 
 
----
+## How To Run
 **In order to run** *Secretary Kim* **, the developer must create a separate `config.json` file and create an object with the following:**
 - `"prefix": "!"`,
 - `"token": [YOUR DISCORD BOT TOKEN]`
